@@ -11,7 +11,7 @@ FieldExact et Periodic , openpyxl.
 –Afin d'interroger cet API il faut en premier créer un compte consommateur sur api.insee.fr. Puis récupérer les clés consommateur et secrète.
 Depuis le Terminal installer la bibliothèque python api-insee via la commande :pip install api-insee.
 # Pré-requis :
-il faut au préalable avoir  python déjà installé dans la machine.
+Il faut au préalable avoir  python déjà installé dans la machine.
 
 # Installer les packages : 
 
