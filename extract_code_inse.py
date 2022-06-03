@@ -16,10 +16,18 @@ from api_insee.criteria import Periodic
 from api_insee import criteria 
 from api_insee import ApiInsee
 from openpyxl import load_workbook
+from configuration import getPathBySection
+
+pathdirectory = getPathBySection('SECTION1')
+print(pathdirectory)
+
+print('-----------------------')
 
 
 
-dfs = pd.read_excel("Test 2022.xlsx", usecols = 'A,B,C,E', skiprows=3)
+
+
+dfs = pd.read_excel(pathdirectory, usecols = 'A,B,C,E', skiprows=3)
 
 
 dataf = pd.DataFrame(dfs)
@@ -71,9 +79,13 @@ for index in room_empty:
 
 df2 = pd.DataFrame(df_list, columns = dataf.columns)
 dataf.update(df2)
-ExcelWorkbook = load_workbook("Test 2022.xlsx")
-writer = pd.ExcelWriter("Test 2022.xlsx", engine = 'openpyxl')
+ExcelWorkbook = load_workbook(pathdirectory)
+writer = pd.ExcelWriter(pathdirectory, engine = 'openpyxl')
 writer.book = ExcelWorkbook
 
 writer.save()
 writer.close()
+
+
+
+
