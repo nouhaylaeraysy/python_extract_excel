@@ -74,9 +74,7 @@ dataf.update(df2)
 ExcelWorkbook = load_workbook("Test 2022.xlsx")
 writer = pd.ExcelWriter("Test 2022.xlsx", engine = 'openpyxl')
 writer.book = ExcelWorkbook
-df2.to_excel(writer, sheet_name = 'result')
-writer.save()
-writer.sheets['result'].set_column(3, 3, 45)
+
 writer.save()
 writer.close()
 
