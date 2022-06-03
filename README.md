@@ -31,6 +31,8 @@ mon projet , terminal intégré qui gère simultanément plusieurs lignes de com
 
 
 LibreOffice Calc
+# Exécution de travail 
+1- Cloner le dépôt sur votre machine: 
 
 
 
