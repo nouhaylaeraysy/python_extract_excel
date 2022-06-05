@@ -1,0 +1,7 @@
+csv
+pandas
+html.entities
+math
+api_insee.criteria
+api_insee
+openpyxl
