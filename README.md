@@ -11,7 +11,7 @@ FieldExact et Periodic , openpyxl.
 –Afin d'interroger cet API il faut en premier créer un compte consommateur sur api.insee.fr. Puis récupérer les clés consommateur et secrète.
 Depuis le Terminal installer la bibliothèque python api-insee via la commande :pip install api-insee.
 ## Pré-requis :
-Il faut au préalable avoir  python déjà installé dans la machine.
+Il faut au préalable avoir un python déjà installé dans la machine.
 
 J'ai utilisé python 3 , les versions précédentes peuvent poser des problèmes .
 #
@@ -31,38 +31,40 @@ Cette dernière active un environnement de python qui nous permet de ne pas modi
 
 
 #
-Linux 
+Linux
 Ouvrez un terminal et tapez :
 sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
-Mise en place d’un environnement virtuel : 
+Mise en place d’un environnement virtuel :
 sudo apt install -y python3-venv
 
 
 
 
-# Installer les packages : 
+# Installer les packages :
 
-- tout simplement avec pip : qui est installer automatiquement sous python 
+- tout simplement avec pip : qui est installer automatiquement sous python
 
-exemple : 
+exemple :
 pip install api-insee
 
 pip install openpyxl
- - ou en tapant dans le terminal : 
+ - ou en tapant dans le terminal :
  pip install -r requirements.txt
 Cela installera les packages nécessaires .
 
 # Fabriqué avec :
-les logiciels que j'ai utilisé sont : 
+les logiciels que j'ai utilisé sont :
 
-Visual Studio Code :  avec son éditeur de text avancé , son explorateur des fichiers qui permet de naviguer facilement et organiser correctement 
+Visual Studio Code :  avec son éditeur de text avancé , son explorateur des fichiers qui permet de naviguer facilement et organiser correctement
 mon projet , terminal intégré qui gère simultanément plusieurs lignes de commandes  en plus il peut même fonctionner avec GitHub
 
 
 LibreOffice Calc
-# Exécution de travail 
+# Exécution de travail
 
 
 
    
+
+
 
