@@ -1,6 +1,6 @@
 # python_extract_excel
 – Ce projet permettra d'interroger l'API et extraire le SIRET des établissements en fonction de leurs Raison sociale et le Code postale
-puis mettre à jour le fichier EXCEL en remplaçant les cellules dont les valeurs sont nulles par le numéro SIRET trouvé  par la requête
+puis mettre à jour le fichier EXCEL en remplaçant les cellules dont les valeurs de SIRET sont nulles par le numéro trouvé avec la requête
 d’interrogation qui combine deux critères :denominationUniteLegale  et  codePostalEtablissement
 
 
@@ -10,8 +10,35 @@ FieldExact et Periodic , openpyxl.
 
 –Afin d'interroger cet API il faut en premier créer un compte consommateur sur api.insee.fr. Puis récupérer les clés consommateur et secrète.
 Depuis le Terminal installer la bibliothèque python api-insee via la commande :pip install api-insee.
-# Pré-requis :
+## Pré-requis :
 Il faut au préalable avoir  python déjà installé dans la machine.
+
+J'ai utilisé python 3 , les versions précédentes peuvent poser des problèmes .
+#
+OS X
+
+Nous vous conseillons d'installer la distribution Anaconda. Elle contient tous les modules et packages nécessaires. Elle est disponible pour toutes les plateformes et possède une procédure d'installation assez simple. Vous pouvez la télécharger depuis http://continuum.io/downloads. Des détails pour l'installation peuvent être trouvés ici : http://docs.continuum.io/anaconda/install.html
+
+Une fois installée, tapez ensuite
+
+conda create -n cours-python
+
+suivi de
+
+source activate cours-python
+
+Cette dernière active un environnement de python qui nous permet de ne pas modifier l'environnement général de votre ordinateur.
+
+
+#
+Linux 
+Ouvrez un terminal et tapez :
+sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+Mise en place d’un environnement virtuel : 
+sudo apt install -y python3-venv
+
+
+
 
 # Installer les packages : 
 
@@ -21,7 +48,9 @@ exemple :
 pip install api-insee
 
 pip install openpyxl
-
+ - ou en tapant dans le terminal : 
+ pip install -r requirements.txt
+Cela installera les packages nécessaires .
 
 # Fabriqué avec :
 les logiciels que j'ai utilisé sont : 
