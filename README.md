@@ -5,7 +5,7 @@ d’interrogation qui combine deux critères :denominationUniteLegale  et  codeP
 
 
 
-–parmi les packages qu'il faut installer pour démarrer ce projet en plus de api-insee on cite  : csv ,pandas ,numpy ,api_insee.criteria pour utliser :
+–parmi les packages qu'il faut installer pour démarrer ce projet en plus de api-insee on cite  : csv ,pandas ,api_insee.criteria pour utliser :
 FieldExact et Periodic , openpyxl.
 
 –Afin d'interroger cet API il faut en premier créer un compte consommateur sur api.insee.fr. Puis récupérer les clés consommateur et secrète.
