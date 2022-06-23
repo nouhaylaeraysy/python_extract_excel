@@ -1,4 +1,4 @@
-# python_extract_excel
+# projet INSEE
 – Ce projet permettra d'interroger l'API et extraire le SIRET des établissements en fonction de leurs Raison sociale et le Code postale
 puis mettre à jour le fichier EXCEL en remplaçant les cellules dont les valeurs de SIRET sont nulles par le numéro trouvé avec la requête
 d’interrogation qui combine deux critères :denominationUniteLegale  et  codePostalEtablissement
